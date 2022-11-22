@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quora on home</title>
+    <link>https://stanleyrazor.github.io/portfolio-blog/tags/quora/</link>
+    <description>Recent content in Quora on home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 08 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/tags/quora/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alpha decay</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/strategy-decay/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/strategy-decay/</guid>
+      <description>Question: As a successful quant trader, do you constantly develop new trading strategies?
+Answer: By Tom Costello
+(https://www.quora.com/As-a-successful-quant-trader-do-you-constantly-develop-new-trading-strategies)
+The short answer is “You had better if you want to keep working.” but I can add some color there.
+There is something in ‘quant trading’ called the ‘system’ or ‘program’ lifecycle.
+A true ‘quant trading program’ identifies systemic pricing inefficiency. But as you participate in that market and take a profit for yourself, the presence of your buy and sell orders makes the pricing more efficient.</description>
+    </item>
+    
+    <item>
+      <title>Pricing efficiency and inefficiency</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/pricing-efficiency-and-inefficiency/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/pricing-efficiency-and-inefficiency/</guid>
+      <description>Question: Do you make money by algorithmic trading, is what Paul Sutton said true?
+Answer: By Tom Costello
+(https://www.quora.com/Do-you-make-money-by-algorithmic-trading-is-what-Paul-Sutton-said-true
+For the largest part I’d have to agree with Paul’s conclusion. His research is more directly empirical, but is completely consistent with my theory on how markets work, and their evolution over time. There isn’t any way I can think of for the typical individual stock trader to pursue ‘algorithmic trading’ in a manner that will lead to greater profit.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,106 +1,97 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HOME</title>
+    <title>home</title>
     <link>https://stanleyrazor.github.io/portfolio-blog/</link>
-    <description>Recent content on HOME</description>
+    <description>Recent content on home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 25 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mermaid JS support</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/posts/mermaid-support/</link>
-      <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
+      <title>Machine Learning in Finance - EP. Chan</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/ml-in-finance/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/mermaid-support/</guid>
-      <description>If you want to use Mermaid-JS on your website. Provide mermaid as Shortcode in your markdown file.
-flowchart LR A --&gt; B B --&gt; C C --&gt; D D --&gt; B sequenceDiagram participant Alice participant Bob Alice-&gt;&gt;Bob: Hi Bob Bob-&gt;&gt;Alice: Hi Alice Find more example on Mermaid-JS website.</description>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/ml-in-finance/</guid>
+      <description>Ernest P. Chan on Financial Machine Learning Link to heading It is quite hard to apply ML in Finance, in order to get some value.
+Simple linear models, and strategies (simplicity is in linear, parsimonious models), such as pairs trading using OLS to compute hedge ratios, and use bollinger bands to detect reversion to mean. Since more and more people, get in the game, there is [[Strategy decay]], making the strategies become less and less profitable.</description>
     </item>
     
     <item>
-      <title>HTML and CSS only tabs</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/posts/html-and-css-only-tabs/</link>
-      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      <title>Developing and backtesting systematic trading strategies</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/developing-and-backtesting-quantitative-strategies/</link>
+      <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/html-and-css-only-tabs/</guid>
-      <description>Basic shortcodes Link to heading The following content:
-{{&amp;lt; tabgroup &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabgroup &amp;gt;}} Will generate:
-Hello Hello World! Goodbye Goodbye Everybody! Right alighment Link to heading You can also align the tabs to the right:
-{{&amp;lt; tabgroup align=&amp;#34;right&amp;#34; &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody!</description>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/developing-and-backtesting-quantitative-strategies/</guid>
+      <description>Quantitative Trading Strategies: The WHAT, WHY and HOW. Link to heading ![[289175171_696414891451337_8400780716761382367_n.jpg]]
+This is a summary of my notes from a paper by Brian G. Peterson on developing quantitative trading strategies, as well as from a youtube video on What is a QUANTITATIVE TRADING STRATEGY from Hudson &amp;amp; Thames.
+References:
+Best Practices in Research for Quantitative Equity Strategies by Joseph A. Carniglia, Frank J. Fabozzi, and Peter N. Kolm Developing &amp;amp; Backtesting Systematic Trading Strategies by Brian G.</description>
     </item>
     
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/posts/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Chat with traders</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/chat-with-traders/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/chat-with-traders/</guid>
+      <description>Episode 52: How to develop quantitative trading strategies - Ernest P. Chan Link to heading Data in finance is sparse, as compared to other domains, e.g trading data of Daily frequency is limited in backtesting, hence you need market intuition. Intra-day trading, is useful since it presents many trading opportunity i.e. Trades are held for hours. Seperate asset classes, and even securities could demand different models. Run stocks in market neutral strategies.</description>
     </item>
     
     <item>
-      <title>Rich Content</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/posts/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Best practices in research for quantitative equity strategies</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/taxonomy-of-quant-models/</link>
+      <pubDate>Thu, 13 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/rich-content/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/taxonomy-of-quant-models/</guid>
+      <description>Reference: BEST PRACTICES IN RESEARCH FOR QUANTITATIVE EQUITY STRATEGIES
+Taxonomy is simply a classification of something.
+Strategies differ in their motivation to trade, information used to trade,and the instrunments traded. Metrics such as: trading frequencies, and holding periods are functions of the investment theory underlying the strategy. Multifactor strategies: Models which invest in equities based on multiple characteristics that replicate how investors make decisions. Allocation strategies: Strategies which make decisions based on allocations to different variables eg.</description>
     </item>
     
     <item>
-      <title>More Rich Content</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/posts/more-rich-content/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Alpha decay</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/strategy-decay/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/more-rich-content/</guid>
-      <description>&lt;p&gt;Hugo Coder provides some Custom Shortcodes.&lt;/p&gt;</description>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/strategy-decay/</guid>
+      <description>Question: As a successful quant trader, do you constantly develop new trading strategies?
+Answer: By Tom Costello
+(https://www.quora.com/As-a-successful-quant-trader-do-you-constantly-develop-new-trading-strategies)
+The short answer is “You had better if you want to keep working.” but I can add some color there.
+There is something in ‘quant trading’ called the ‘system’ or ‘program’ lifecycle.
+A true ‘quant trading program’ identifies systemic pricing inefficiency. But as you participate in that market and take a profit for yourself, the presence of your buy and sell orders makes the pricing more efficient.</description>
     </item>
     
     <item>
-      <title>Placeholder Text</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/posts/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Pricing efficiency and inefficiency</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/pricing-efficiency-and-inefficiency/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/pricing-efficiency-and-inefficiency/</guid>
+      <description>Question: Do you make money by algorithmic trading, is what Paul Sutton said true?
+Answer: By Tom Costello
+(https://www.quora.com/Do-you-make-money-by-algorithmic-trading-is-what-Paul-Sutton-said-true
+For the largest part I’d have to agree with Paul’s conclusion. His research is more directly empirical, but is completely consistent with my theory on how markets work, and their evolution over time. There isn’t any way I can think of for the typical individual stock trader to pursue ‘algorithmic trading’ in a manner that will lead to greater profit.</description>
     </item>
     
     <item>
-      <title>Math Typesetting</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/posts/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Feature engineering and selection</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/feature-engineering-and-selection/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/feature-engineering-and-selection/</guid>
+      <description>CHAPTER 7 Link to heading For many problems in predictive analysis, the variation in response can be explained by the independent variables working together, however for certain variation in the response variable, it has to be explained by the joint workings of two or more variables together.
+Two or more predictors are said to interact if their combined effect is different (less or greater) than what we would expect if we were to add the impact of each of their effects when considered alone.</description>
     </item>
     
     <item>
-      <title>Emoji Support</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/posts/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>External Page: Hugo Coder Wiki</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/posts/hugo-coder-wiki/</link>
-      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/hugo-coder-wiki/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>About</title>
+      <title>About me</title>
       <link>https://stanleyrazor.github.io/portfolio-blog/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stanleyrazor.github.io/portfolio-blog/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
-https://github.com/yuin/goldmark https://github.</description>
+      <description>My name is Stanley Sayianka, an aspiring machine learning research scientist. I am a data scientist trained in statistical methods, with a focus on quantitative finance (so far). I thoroughly enjoy studying machine learning, and strive to combine it with my daily experiences in order to deliver valuable insights to the issues facing the environment I operate in. In my studies, I love exploring how learning algorithms actually learn, how they respond to changes, and how they evolve to handle the ever-growing complexity of the real world.</description>
     </item>
     
     <item>
@@ -109,7 +100,8 @@ https://github.com/yuin/goldmark https://github.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://stanleyrazor.github.io/portfolio-blog/contact/</guid>
-      <description>Follow me, @johndoe.</description>
+      <description>You can contact me directly through the e-mail address: stanleysayankaSSS@gmail.com.
+You can alternatively contact me through the social media channels posted on my Homepage, although i am not a frequent user of those sites/apps.</description>
     </item>
     
     <item>
@@ -118,7 +110,9 @@ https://github.com/yuin/goldmark https://github.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://stanleyrazor.github.io/portfolio-blog/projects/</guid>
-      <description>Nothing to see here&amp;hellip; Move along!</description>
+      <description>The projects I have done on quantitative finance, Machine learning, and data science/analytics are shown below. I have included labels(tags) which help for quick searching and filtering. Full list of all the projects I have done can be found in my Github repositories page. Feel free to contact me for collaborations, inquiries, recommendations and questions. Thanks.
+LEARNING REPRESENTATIONS IN HIGH-DIMENSIONAL DATA
+This study explores models suitable for high-dimensional data, where several challenges such as multi-collinearity and over-fitting are inherent.</description>
     </item>
     
   </channel>

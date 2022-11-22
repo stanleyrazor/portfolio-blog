@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  Feature engineering and selection · home
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Stanley Sayianka">
+<meta name="description" content="My notes from reading the book: FEATURE ENGINEERING AND SELECTION - Max Kuhm">
+<meta name="keywords" content="blog,data-scientist,machine-learning">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Feature engineering and selection"/>
+<meta name="twitter:description" content="My notes from reading the book: FEATURE ENGINEERING AND SELECTION - Max Kuhm"/>
+
+<meta property="og:title" content="Feature engineering and selection" />
+<meta property="og:description" content="My notes from reading the book: FEATURE ENGINEERING AND SELECTION - Max Kuhm" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stanleyrazor.github.io/portfolio-blog/posts/feature-engineering-and-selection/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-01-01T00:00:00+00:00" />
+
+
+
+
+
+<link rel="canonical" href="https://stanleyrazor.github.io/portfolio-blog/posts/feature-engineering-and-selection/">
+
+
+<link rel="preload" href="https://stanleyrazor.github.io/portfolio-blog/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="https://stanleyrazor.github.io/portfolio-blog/css/coder.min.c4d7e93a158eda5a65b3df343745d2092a0a1e2170feeec909b8a89443903c6a.css" integrity="sha256-xNfpOhWO2lpls980N0XSCSoKHiFw/u7JCbiolEOQPGo=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="https://stanleyrazor.github.io/portfolio-blog/css/coder-dark.min.78b5fe3864945faf5207fb8fe3ab2320d49c3365def0e88ac1df0ddadc54a03c.css" integrity="sha256-eLX&#43;OGSUX69SB/uP46sjINScM2Xe8OiKwd8N2txUoDw=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="https://stanleyrazor.github.io/portfolio-blog/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://stanleyrazor.github.io/portfolio-blog/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://stanleyrazor.github.io/portfolio-blog/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://stanleyrazor.github.io/portfolio-blog/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://stanleyrazor.github.io/portfolio-blog/site.webmanifest">
+<link rel="mask-icon" href="https://stanleyrazor.github.io/portfolio-blog/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.106.0">
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://stanleyrazor.github.io/portfolio-blog/">
+      home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/posts/">My Notes</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://stanleyrazor.github.io/portfolio-blog/posts/feature-engineering-and-selection/">
+              Feature engineering and selection
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-01-01T00:00:00Z">
+                January 1, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              10-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://stanleyrazor.github.io/portfolio-blog/tags/machine-learning/">Machine Learning</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://stanleyrazor.github.io/portfolio-blog/tags/feature-engineering/">Feature engineering</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h1 id="chapter-7">
+  CHAPTER 7
+  <a class="heading-link" href="#chapter-7">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>For many problems in predictive analysis, the variation in response can be explained by the independent variables working together, however for certain variation in the response variable, it has to be explained by the joint workings of two or more variables together.</p>
+<p>Two or more predictors are said to interact if their combined effect is different (less or greater) than what we would expect if we were to add the impact of each of their effects when considered alone. Interactions are always in the context of <em>how predictors relate to the outcome</em>. Correlation among predictors does not necesarily imply interaction.</p>
+<p>Mathematically interaction is presented as: <br>
+$$y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon_t$$<br>
+Here:</p>
+<ul>
+<li>$\beta_0$ represents overall average response.</li>
+<li>$\beta_1$, $\beta_2$ represent average rate to change due to $x_1$ and $x_3$ respectively.</li>
+<li>$\beta_3$ represents incremental change due to the combined effect of $x_1,x_2$ that goes beyond what the two variables can explain alone.</li>
+<li>$\epsilon_t$ repreents thee random variation in $y$ that goes beyond what the deterministic part of the equation can explain.</li>
+</ul>
+<p>Once model is fitted by means of Least squares estimation, or say logistic regression, there are 4 instances that could occur:</p>
+<ol>
+<li>if $\beta_3$ is not significantly different from 0, then interaction between $x_1,x_2$ is not useful in explaining rhe variation in the response. THus in this case the relationship between $x_1,x_2$ is called <em>additive</em>.</li>
+<li>If the coefficient is meaningfuly negative, while $x_1,x_2$ alone also affect the response, then the relationship is said to be <em>antagonistic</em></li>
+<li>If the coefficient is meaningfuly positive, while $x_1,x_2$ alone also affect the response, then the relationship is said to be <em>synergistic</em></li>
+<li>When the interaction term is significant in the model, but either one or both of $x_1$ or $x_2$ do not affect the response, then the average response of $x_1$ across the values of $x_2$ and vice versa has a rate of change which is essentially 0. This is reffered to as <em>atypical</em> interaction. Visualization is important to understand the data here.</li>
+</ol>
+<p>Interactions can either be found by domain knowlege or using more complicated techniques. Research has shown that tree based models, are good at uncovering interaction effects through the recursive splitting techniques.
+However it is important to identify the in a domain-fashion since this leads to meningully builing features which are explainable and relevant.</p>
+<h2 id="guding-principles-in-the-search-for-interaction">
+  Guding principles in the search for interaction.
+  <a class="heading-link" href="#guding-principles-in-the-search-for-interaction">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li>
+<p>Expert knowledge in te area of analysis is critical for guiding this process of selecting interaction terms. Hence expert-selected interaction features should be identified and explored. If expert knowledge is not available, sound guiding principles are needed that will lead to reasonable selection of interactions.</p>
+</li>
+<li>
+<p>An important area of research that has actively done work in interaction effects is <strong>Statistical design and analysis of experiments</strong></p>
+</li>
+</ol>
+<p>![[DoE.png]]</p>
+<p>Here experiments are done to determine how factors affect a given response variable, using ANOVA, and it is possible to model the interaction between the factors. For example: an experiment conducted to analyze effect of different fertilizer levels and water on yield of crops, could be used to get the interactive effect of a level of fertilizer and water on the yield. Check <em>factorial experiments</em></p>
+<ol start="3">
+<li>Determining which interactions are significant in explaining variation in the response is of key interest. Three important factors are useful.</li>
+</ol>
+<ul>
+<li><strong>Hierarchy principle</strong>: THe higher the degree of interaction, the less likely the interaction will explain the variation in the response. Therefore, <em>pairwise</em> interactions should be the first set tried, then three way, then four-way etc. Care should be taken when dealing with higher degree of interactions, since they hardly are usually significant and may lack interpretability.</li>
+<li><strong>Effect sparsity</strong>: States that onlt a fraction of tje possinle effects truly explain a siginificant amount of variation in the response. THis aproach greatly narrows down the possible main an interaction effects.</li>
+<li><strong>Effect heredity</strong>: This asserts that the interaction terms may only be considered if the ordered terms preceeding the interaction are effective at explaining the response variation.
+<ul>
+<li><strong>Strong heredity</strong>: States that the interaction effect $x_1*x_2$ can only be included in the model, if the main effect of $x_1$ and $x_2$ are significant in explaining a decent amount of variation in the response.</li>
+<li><strong>Weak heredity</strong>: Relaxes the strong heredity, and allows for any interaction, where at least one of the terms ios significant in explaining response variation. If $x_1$ is a significant predictor,but $x_2$ isn&rsquo;t, then weak heredity allows for the interaction $x_1*x_2$ to be included in the model.</li>
+</ul>
+</li>
+</ul>
+<p>Even though higher order interaction terms are usually not desirable, they often occur in nature, and thus it is of importance to try and explore the possibility of higher order interaction terms, especially when expert knoweldge points to the possibility of their relevance in the model.</p>
+<ol start="4">
+<li>
+<p>A brute force search over all possible pair-wise interactions could be useful, however computationally intensive since as the number $p$ of predictors increase, then does the number of their pair-wise interactions, i.e. $p(1-p)/2$ , e.g. for 100 predictors, we would have pair-wise $4950$ terms, and for 500 predictors, we would have pairwise $125,000$ terms.</p>
+<p>A challenge with the brute force approach, is that it is easier for interaction terms, which are related to the response by purely random chance to be found. This is called <em>false positive finding</em>.
+For the model:</p>
+<p>$$y = \beta_0 + \beta_1 x_1 + \beta_2 x_2$$</p>
+<p>The interaction terms, when added to the model becomes:</p>
+<p>$$y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2$$</p>
+<p>The two models above are called nested models, since the first model, is a subset of the second model. In Linear regression for instance, a test could be constructed to compare the residuals of the two models (<em>adjusted for the degree of freedom</em>) on whether there is any significant improveemnt upon adding the interaction term.</p>
+<p>This approach could be taken further, where resampling is first done, to create a number of nested models <em>(on each sub-dataset)</em>, and these models are then evaluated using an objective function e.g. ROC, AUC, sensitivity, specificity, RMSE on predictions, ANOVA, $R^2$ etc.</p>
+<p>Measures to deal with <em>False positive findings</em> include: not dealing with them, or using corrections, which are usually viewed as very strict(read on: <em>Bonferroni corrections</em>).</p>
+</li>
+<li>
+<p>Another question which emerges when creating the interaction terms, is whether to include the terms after pre-processing, or before pre-processing e.g. (<em>centering, scaling, normalizing,dimension expansion/reduction etc</em>). It is advisable that, we carefully evaluate how the order should be. In general it is more plausible to construct the interaction terms on original measurement scales, prior to any pre-processing steps.</p>
+</li>
+<li>
+<p>Another issue which emerges, when trying to add interaction effects is the possibility of $p &gt; n$ i.e. the number of predictors could get larger than the sample itself. This will pose a challenge to linear models e.g. linear regression, logistic regression etc, but will not be a challenge to models such as KNN, ANN, SVMs etc. This hurts the process, since the goal of feature engineering is to <strong>identify features that improve model performance, while improving interpretability</strong>.</p>
+</li>
+</ol>
+<p>A work around is <strong>penalized models</strong>. These are models which are built to handle the $p &gt; n$ issue, when interpretability is still desired.
+Recall that in fitting models, such as Linear regression models,
+the error function is of the form:</p>
+<p>$$Q = \sum{(y_i - \hat{y_i})^2}$$</p>
+<p>In solving for the regression coefficients, there involves matrix inversion of the covariance matrix of predictors:</p>
+<p>$$\beta = (X^T X)^{-1} (X^T Y)$$</p>
+<p>However, in the prescence of many predictors, there is likely the case, some predictors will be highly correlated, and thus the $(X^T X)^{-1}$ matrix will not be of full rank, and thus NOT invertible, and the regression coefficients grow large and unstable.</p>
+<p>A work around is to change the error function of the regression model to be:</p>
+<p>$$Q_{L2} = \sum{(y_i - \hat{y_i})^2} + \lambda_r \sum{\beta^2_j}$$</p>
+<p>The $\lambda$ is called a penalty, and this technique is called <strong>ridge regression</strong>. The penalty term must increase when the coefficients grow large, in order to enforce minimization. In result, the penalty causes the regression coefficients to become smaller and shrink towards 0, this makes the model much interpretable.
+A different penalized regression model is shown below:</p>
+<p>$$Q_{L1} = \sum{(y_i - \hat{y_i})^2} + \lambda_L \sum{|\beta_j|}$$</p>
+<p>This method is called: Least absolute shrinkage and selection operator: <strong>(LASSO)</strong> In modifying the penalizer, lasso method forces some regression coefficients to 0, and in doing so, it practically selects model terms to an optimal number of predictors. This makes it a feature selection model.</p>
+<ul>
+<li>Ridge regression is commonly used in comabting collinearity between predictors.</li>
+<li>Lasso regression is commonly used in elimination of predictors.</li>
+<li>However, we could desie both the lasso and ridge penalty in the same model, so that we deal with collinearity, and feature selection, all at the same time. This model becomes:</li>
+</ul>
+<p>$$Q = \sum{(y_i - \hat{y_i})^2} + \lambda [ (1 - \alpha)\sum{\beta^2_j} + \alpha \sum{| \beta_j |} ]$$</p>
+<p>Here, $\lambda = \lambda_r + \lambda_L$ , and the proportion of $\lambda$ associated with the lasso is denoted $\alpha$. Thus, selecting $\alpha = 1$ would be a full lasso penalty model, whereas $\alpha = 0.5$ is an even  mix of a ridge and lasso model.</p>
+<p><strong>Read: GLMNET in R</strong></p>
+<ol start="7">
+<li>In the prescence of a large number of predictors, complete enumeration is impossible, and hence there is need for more efficient search procedures.
+<strong>The two stage approach:</strong>
+In this approach, we start of by constructing a model which doesn&rsquo;t account for the interaction terms. In a linear regression setting, the error terms from such a model usually account for:</li>
+</ol>
+<ul>
+<li>The unexplained variation in the response, that is due to random measurement error.</li>
+<li>Due to predictors that were not available or measured.</li>
+<li>Or interactions among the observed predictors, that weren&rsquo;t included in the model.</li>
+</ul>
+<p>Supposing, that the data generating process is shown below:</p>
+<p>$$y = x_1 + x_2+ 10 x_1 x_2 + error$$</p>
+<p>Then suppose that, when data was collected, only $x_1$ was collected, so that the equation approximated becomes:</p>
+<p>$$y = \beta_1 x_1 + error*$$</p>
+<p>Since the true response depends on $x_2, x_1 x_2$ , then the error $error*$ contains the information about these important terms which were absent from the model. When collected, then it would be possible to seperate their contribution, through a second model:</p>
+<p>$$error* = \beta_2 x_2 + \beta_3 x_1 x_2 + error$$</p>
+<p>In the prescence of many predictors, the efficient search for interaction terms could be narrowed down using the three principles outlined above: <em>hierarchy, sparsity, heredity principles</em>:</p>
+<ul>
+<li><em>hierarchy</em>: First look at pair-wise interactions, before going to higher level interactions.</li>
+<li><em>sparsity</em>: States that if there are interactions, which are relevant, then only few of them exist.</li>
+<li><em>heredity</em>: Only search for interactions among the significant predictors.</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>![[tree.png]]</p>
+<p>This is an example of a recusrive splitting model, for a synergistic relationship between $x_1$ and $x_2$.
+For node 4, the equation becomes:</p>
+<p>$$Node_4 = I(x_1 &lt; 0.655) * I(x_2 &lt; 0.5) * I(x_2 &lt; 0.316) * 0.939$$</p>
+<p>$0.939$ is the mean of the training set data falling into this mode.</p>
+<p>$I(x) = 1$, if x is true <br>
+$I(x) = 0$, if x is false</p>
+<p>In tree based models, the final prediction equation would be computed by adding similar terms from the other 8 terminal nodes(<em>which would all be 0, except a single rule when predicting</em>).</p>
+<p>Tree-based models, have some shortcomings such as: High variability, where a tree changes so vastly, when data changes by even small magnitudes. To correct for this other models such as <em>boosting</em> and <em>bagging</em> are useful.</p>
+<p><strong>Bagging</strong>: includes sampling many times, with replacement fro the original data in an independent manner, and for each sample, a tree model is built. For predictions, the model averages the predicted
+responses across all of the trees. Random forests are a further modification of bagging.</p>
+<p><strong>Boosting</strong>: Boosting models also utilize a sequence of trees, but creates them in a different manner,where, instead of building trees to maximum depth, a boosted model restricts tree depth. Boosting also utilizes the predictive performance of the previous tree on the samples to reweigh poorly predicted samples. The contribution of each tree to the model is weighted using statistics related to individual model fit, when predicting.</p>
+<p>Tree-based models are useful in uncovering interaction effects, and modelling them especially <em>locally</em>, which would be difficult for linear regression models.</p>
+<p><strong>Predictor importance information</strong>:</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+	<a href="https://gohugo.io/">Hugo</a> | <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="https://stanleyrazor.github.io/portfolio-blog/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on HOME</title>
+    <title>Authors on home</title>
     <link>https://stanleyrazor.github.io/portfolio-blog/authors/</link>
-    <description>Recent content in Authors on HOME</description>
+    <description>Recent content in Authors on home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="https://stanleyrazor.github.io/portfolio-blog/authors/index.xml" rel="self" type="application/rss+xml" />
   </channel>

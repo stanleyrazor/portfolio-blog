@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on home</title>
+    <link>https://stanleyrazor.github.io/portfolio-blog/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning in Finance - EP. Chan</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/ml-in-finance/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/ml-in-finance/</guid>
+      <description>Ernest P. Chan on Financial Machine Learning Link to heading It is quite hard to apply ML in Finance, in order to get some value.
+Simple linear models, and strategies (simplicity is in linear, parsimonious models), such as pairs trading using OLS to compute hedge ratios, and use bollinger bands to detect reversion to mean. Since more and more people, get in the game, there is [[Strategy decay]], making the strategies become less and less profitable.</description>
+    </item>
+    
+    <item>
+      <title>Feature engineering and selection</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/feature-engineering-and-selection/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/feature-engineering-and-selection/</guid>
+      <description>CHAPTER 7 Link to heading For many problems in predictive analysis, the variation in response can be explained by the independent variables working together, however for certain variation in the response variable, it has to be explained by the joint workings of two or more variables together.
+Two or more predictors are said to interact if their combined effect is different (less or greater) than what we would expect if we were to add the impact of each of their effects when considered alone.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Feature engineering on home</title>
+    <link>https://stanleyrazor.github.io/portfolio-blog/tags/feature-engineering/</link>
+    <description>Recent content in Feature engineering on home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/tags/feature-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Feature engineering and selection</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/feature-engineering-and-selection/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/feature-engineering-and-selection/</guid>
+      <description>CHAPTER 7 Link to heading For many problems in predictive analysis, the variation in response can be explained by the independent variables working together, however for certain variation in the response variable, it has to be explained by the joint workings of two or more variables together.
+Two or more predictors are said to interact if their combined effect is different (less or greater) than what we would expect if we were to add the impact of each of their effects when considered alone.</description>
+    </item>
+    
+  </channel>
+</rss>

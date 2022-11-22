@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  Best practices in research for quantitative equity strategies · home
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Stanley Sayianka">
+<meta name="description" content="Best practices in research for quantitative equity strategies">
+<meta name="keywords" content="blog,data-scientist,machine-learning">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Best practices in research for quantitative equity strategies"/>
+<meta name="twitter:description" content="Best practices in research for quantitative equity strategies"/>
+
+<meta property="og:title" content="Best practices in research for quantitative equity strategies" />
+<meta property="og:description" content="Best practices in research for quantitative equity strategies" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stanleyrazor.github.io/portfolio-blog/posts/taxonomy-of-quant-models/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-10-13T00:00:00+00:00" />
+
+
+
+
+
+<link rel="canonical" href="https://stanleyrazor.github.io/portfolio-blog/posts/taxonomy-of-quant-models/">
+
+
+<link rel="preload" href="https://stanleyrazor.github.io/portfolio-blog/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="https://stanleyrazor.github.io/portfolio-blog/css/coder.min.c4d7e93a158eda5a65b3df343745d2092a0a1e2170feeec909b8a89443903c6a.css" integrity="sha256-xNfpOhWO2lpls980N0XSCSoKHiFw/u7JCbiolEOQPGo=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="https://stanleyrazor.github.io/portfolio-blog/css/coder-dark.min.78b5fe3864945faf5207fb8fe3ab2320d49c3365def0e88ac1df0ddadc54a03c.css" integrity="sha256-eLX&#43;OGSUX69SB/uP46sjINScM2Xe8OiKwd8N2txUoDw=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="https://stanleyrazor.github.io/portfolio-blog/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://stanleyrazor.github.io/portfolio-blog/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://stanleyrazor.github.io/portfolio-blog/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://stanleyrazor.github.io/portfolio-blog/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://stanleyrazor.github.io/portfolio-blog/site.webmanifest">
+<link rel="mask-icon" href="https://stanleyrazor.github.io/portfolio-blog/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.106.0">
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://stanleyrazor.github.io/portfolio-blog/">
+      home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/posts/">My Notes</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://stanleyrazor.github.io/portfolio-blog/posts/taxonomy-of-quant-models/">
+              Best practices in research for quantitative equity strategies
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-10-13T00:00:00Z">
+                October 13, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              One-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://stanleyrazor.github.io/portfolio-blog/tags/quant-finance/">Quant Finance</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://stanleyrazor.github.io/portfolio-blog/tags/trading/">Trading</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>Reference: <strong>BEST PRACTICES IN RESEARCH FOR QUANTITATIVE EQUITY STRATEGIES</strong></p>
+<p>Taxonomy is simply a classification of something.</p>
+<ul>
+<li>Strategies differ in their motivation to trade, information used to trade,and the instrunments traded.</li>
+<li>Metrics such as: trading frequencies, and holding periods are functions of the investment theory underlying the strategy.</li>
+</ul>
+<ol>
+<li>Multifactor strategies: Models which invest in equities based on multiple characteristics that replicate how investors make decisions.</li>
+<li>Allocation strategies: Strategies which make decisions based on allocations to different variables eg. Factor timing, sectors, regime switching etc.</li>
+<li>Stock specific strategies: Strategies which focus on information available to a specific individual security.</li>
+<li>Event studies: Strategies which generate alpha from certain market events,such as M&amp;A, Earnings announcements.</li>
+<li>Market micro-structure strategies: Strats which exploit profitable opportunities arising from trading flows and dynamics of the equity markets.</li>
+<li>Stat-Arb: Strategies which exploit systematic relationships among equity securities with similar characteristics.</li>
+<li>Textual strats: Quant strats based on qualitative textual signals, such as news reports, internet sentiment on social media.</li>
+<li>Macro-strategies: Strats which trade baskets of securities based on broad themes in the economic environment, tech, demography etc.</li>
+</ol>
+<h2 id="properties-of-good-quantitative-models">
+  Properties of good quantitative models
+  <a class="heading-link" href="#properties-of-good-quantitative-models">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+	<a href="https://gohugo.io/">Hugo</a> | <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="https://stanleyrazor.github.io/portfolio-blog/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

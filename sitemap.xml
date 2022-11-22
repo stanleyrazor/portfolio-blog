@@ -1,18 +1,81 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>https://stanleyrazor.github.io/portfolio-blog/en/sitemap.xml</loc>
-    
-      <lastmod>2022-07-25T00:00:00+00:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>https://stanleyrazor.github.io/portfolio-blog/pt-br/sitemap.xml</loc>
-    
-      <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    
-  </sitemap>
-  
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/</loc>
+    <lastmod>2022-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/tags/machine-learning/</loc>
+    <lastmod>2022-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/posts/ml-in-finance/</loc>
+    <lastmod>2022-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/posts/</loc>
+    <lastmod>2022-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/tags/quant-finance/</loc>
+    <lastmod>2022-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/tags/</loc>
+    <lastmod>2022-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/tags/trading/</loc>
+    <lastmod>2022-10-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/posts/developing-and-backtesting-quantitative-strategies/</loc>
+    <lastmod>2022-10-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/posts/chat-with-traders/</loc>
+    <lastmod>2022-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/posts/taxonomy-of-quant-models/</loc>
+    <lastmod>2022-10-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/posts/strategy-decay/</loc>
+    <lastmod>2022-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/posts/pricing-efficiency-and-inefficiency/</loc>
+    <lastmod>2022-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/tags/quora/</loc>
+    <lastmod>2022-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/tags/feature-engineering/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/posts/feature-engineering-and-selection/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/about/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/tags/competencies/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/tags/conferences/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/tags/education/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/tags/profession/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/tags/publications/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/tags/references/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/authors/</loc>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/categories/</loc>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/contact/</loc>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/projects/</loc>
+  </url><url>
+    <loc>https://stanleyrazor.github.io/portfolio-blog/series/</loc>
+  </url>
+</urlset>

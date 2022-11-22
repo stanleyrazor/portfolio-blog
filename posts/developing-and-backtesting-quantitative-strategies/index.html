@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  Developing and backtesting systematic trading strategies · home
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Stanley Sayianka">
+<meta name="description" content="Developing and backtesting systematic trading strategies">
+<meta name="keywords" content="blog,data-scientist,machine-learning">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Developing and backtesting systematic trading strategies"/>
+<meta name="twitter:description" content="Developing and backtesting systematic trading strategies"/>
+
+<meta property="og:title" content="Developing and backtesting systematic trading strategies" />
+<meta property="og:description" content="Developing and backtesting systematic trading strategies" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stanleyrazor.github.io/portfolio-blog/posts/developing-and-backtesting-quantitative-strategies/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-10-20T00:00:00+00:00" />
+
+
+
+
+
+<link rel="canonical" href="https://stanleyrazor.github.io/portfolio-blog/posts/developing-and-backtesting-quantitative-strategies/">
+
+
+<link rel="preload" href="https://stanleyrazor.github.io/portfolio-blog/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="https://stanleyrazor.github.io/portfolio-blog/css/coder.min.c4d7e93a158eda5a65b3df343745d2092a0a1e2170feeec909b8a89443903c6a.css" integrity="sha256-xNfpOhWO2lpls980N0XSCSoKHiFw/u7JCbiolEOQPGo=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="https://stanleyrazor.github.io/portfolio-blog/css/coder-dark.min.78b5fe3864945faf5207fb8fe3ab2320d49c3365def0e88ac1df0ddadc54a03c.css" integrity="sha256-eLX&#43;OGSUX69SB/uP46sjINScM2Xe8OiKwd8N2txUoDw=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="https://stanleyrazor.github.io/portfolio-blog/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://stanleyrazor.github.io/portfolio-blog/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://stanleyrazor.github.io/portfolio-blog/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://stanleyrazor.github.io/portfolio-blog/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://stanleyrazor.github.io/portfolio-blog/site.webmanifest">
+<link rel="mask-icon" href="https://stanleyrazor.github.io/portfolio-blog/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.106.0">
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://stanleyrazor.github.io/portfolio-blog/">
+      home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/posts/">My Notes</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://stanleyrazor.github.io/portfolio-blog/posts/developing-and-backtesting-quantitative-strategies/">
+              Developing and backtesting systematic trading strategies
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-10-20T00:00:00Z">
+                October 20, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              10-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://stanleyrazor.github.io/portfolio-blog/tags/quant-finance/">Quant Finance</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://stanleyrazor.github.io/portfolio-blog/tags/trading/">Trading</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h1 id="quantitative-trading-strategies-the-what-why-and-how">
+  Quantitative Trading Strategies: The WHAT, WHY and HOW.
+  <a class="heading-link" href="#quantitative-trading-strategies-the-what-why-and-how">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>![[289175171_696414891451337_8400780716761382367_n.jpg]]</p>
+<p>This is a summary of my notes from a paper by Brian G. Peterson on developing quantitative trading strategies, as well as from a youtube video on <strong>What is a QUANTITATIVE TRADING STRATEGY</strong> from Hudson &amp; Thames.</p>
+<p>References:</p>
+<ol>
+<li>Best Practices in Research for Quantitative Equity Strategies by Joseph A. Carniglia, Frank J. Fabozzi, and Peter N. Kolm</li>
+<li>Developing &amp; Backtesting Systematic Trading Strategies by Brian G. Peterson.</li>
+</ol>
+<p>Keywords: <strong>Strategy, Indicators, Models, Hypotheses</strong></p>
+<p>A quantitative strategy is a systematic, data- and model-based approach to making investment decisions. It is a scientific approach to investments.</p>
+<h2 id="characteristics">
+  Characteristics.
+  <a class="heading-link" href="#characteristics">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The characteristics of scientific approach to quantitative strategies:</p>
+<ul>
+<li>Development of a thoughtful hypothesis to be evaluated.</li>
+<li>Use of empirical work to put precision around investment decisions and economic reasoning.</li>
+<li>Reliance on high standards of economic rigor</li>
+<li>Use of sensitivity analysis to challenge assumptions and the context in which the strategy was developed.</li>
+<li>Incorporation of adjustments to the strategy based on judgement.</li>
+<li>Ability to explicitly measure results, and outcomes.</li>
+<li>Incorporations of revisions/updates to the models as new information becomes available.
+The steps to [[Scientific design of quantitative strategies]].</li>
+</ul>
+<h2 id="key-steps">
+  Key steps
+  <a class="heading-link" href="#key-steps">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="constraints-benchmarks-and-objectives">
+  Constraints, Benchmarks and Objectives
+  <a class="heading-link" href="#constraints-benchmarks-and-objectives">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<h4 id="constraints">
+  Constraints
+  <a class="heading-link" href="#constraints">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Clearly define hat you want to achieve with your investment strategy, and understand what you are tying to achieve. This helps when carefully evaluating backtests, and ensures you do not just accept any backtest that is not in line with your investment goals.</p>
+<p>Some investment constraints include:</p>
+<ul>
+<li>Execution platform for the trades you want to make.</li>
+<li>Accessto the markets and the products you can trade.</li>
+<li>Data availability and management.</li>
+<li>Capital availability.</li>
+<li>Transaction costs.</li>
+</ul>
+<h4 id="benchmarks">
+  Benchmarks
+  <a class="heading-link" href="#benchmarks">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>The choice of a benchmark is important as it informs you on how to better understand the performance of you strategy, avoid the risks of bechmark chasing and overfitting. A choice of benchmark should reflect your investment objectives and constraints, and should be a good way to measure performance over time.</p>
+<p>Examples of benchmarks:</p>
+<ul>
+<li>When comparing two or more indicators, you could use one as a benchmark. A momentum strategy could use a Golden-Death crossover strategy.</li>
+<li>Indices provide a goo benchmark. They give a good idea about how a certain sector is performing, a certain market&rsquo;s overall performance etc. However one should keep in mind that most indice are the average of many instrunments, and thus their performance is not usually exceptional, thus beating the benchmark should just be a bare minimum in this case.</li>
+<li>Custom tracking portfolios also provide a good benchmark e.g. a market-cap weighted portfolio which is rebalanced annually/quarterly. Synthetic portfolios can be constructed as benchmarks such as including assets which are competitors to your portfolio&rsquo;s constituents.
+In choosing benchmarks, ensur you understand the limitations of the benchmarks chosen, which could include:</li>
+<li>benchmarks composed of assets from a different investable universe.</li>
+<li>Any specific representative features of the benchmarks.</li>
+<li>The weighting criteria(<em>i.e. market-cap weighted, price-weighted, equally-weighted</em>), and rebalancing criteria used for the benchmarks
+These limitations will help you evaluate you choice for the benchmarks chosen.</li>
+</ul>
+<p>Several ways to measure performance against benchmarks exist and include, but are not limited to: <em>Alpha, Beta, Beta+, Beta-, Tracking error, Information Ratio, Active Premium, Up-capture, Down-capture, Outperformance probability, Co-skewness, Co-Kurtosis</em> etc.</p>
+<h4 id="objectives">
+  Objectives
+  <a class="heading-link" href="#objectives">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Your business objectives state the type of returns you require from your capital, your risk objectives, amount of leverage you are willing to take, and your drawdown constraints <em>(closely tied to leverage)</em></p>
+<p>These business objectives might be specified as ranges such as:</p>
+<ul>
+<li>Minimum acceptables: For instance when setting the <strong>Minimum Acceptable Return</strong> <em>(This is important since there will always be a returns objective below which a stategy is not worth doing.)</em></li>
+<li>Maximum acceptables: This is important when setting the drawdown limit, such as a Maximum Drawdown of x%.</li>
+<li>Plausible targets etc.
+The strategy objectives need to be formulated i such a way that they are easily used to programatically evaluate the strategy.</li>
+</ul>
+<p>Common business objectives that are mostly used in portfolio optimimzation include:
+Maximize <em>some measure of return</em>
+subject to:
+Minimize <em>some measure of risk</em>
+The common measures of return include: <em>Sharpe ratio, Sortino ratio, Information ratio, profit factor, Calmar ratio, return/ETL</em> etc.</p>
+<p>Other important factors to consider which might not be in the business objectives are metrics such as:</p>
+<ul>
+<li>Correlation to perfect profit</li>
+<li>Equity curve slope</li>
+<li>Linearity of equity curve</li>
+<li>Other trade statistics</li>
+</ul>
+<h2 id="hypothesis-driven-development">
+  Hypothesis Driven Development
+  <a class="heading-link" href="#hypothesis-driven-development">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Since the process of coming up with investment strategies is expensive in terms of the time put in research, as well as the Capital necessary to deploy the strategy in a live market, a Hypothesis driven development approach is necessary in ensuring:</p>
+<ul>
+<li>Confirmation of ideas quickly <em>(in line with the objectives, and constraints)</em>.</li>
+<li>Cheap rejection of failures.</li>
+<li>Avoiding the danger of over fitting.</li>
+</ul>
+<p>Any trading idea has to be testable, and the following steps are helpful:</p>
+<ul>
+<li>Formulate the idea as a declarative conjecture. A conjectire can simply be a statement about the nature of the markets, or the instrunments you want to trade.</li>
+<li>Ensure the conjecture is predictive. A good conjecture also makes a prediction,  which must specify either cause, or an observable state that preced the oredicted outcome.</li>
+<li>Define the expected outcome of the conjecture and means of testing <em>(verifying)</em> the expected outcome. A good hypothesis must specify its own tests. A good hypothesis always specifies how it can be verified.
+It is important to test statistically whether the returns of the strategy are differentiable from other measurable effects, or from noise, or from factor interactions.</li>
+</ul>
+<p>A complete hypothesis statement will have the following:</p>
+<ul>
+<li>What is being analyzed (<em>the subject</em>)</li>
+<li>The dependent variable, which forms the <em>output, result, or prediction</em></li>
+<li>The independent variables which are <em>the inputs into the model</em></li>
+<li>The anticipated possible outcomes.</li>
+<li>How each hypothesis will be validated/refutes which forms <em>the tests</em></li>
+</ul>
+<p>The process of coming up with hypotheses should be set clearly in order to avoid HARKing <em>(Hypothesizing After the Results are Known)</em>. True scientific inference ensures that the hypothese are developed <strong>a priori</strong></p>
+<h3 id="defining-a-strategy">
+  Defining a strategy
+  <a class="heading-link" href="#defining-a-strategy">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<h4 id="1-filters">
+  1. Filters
+  <a class="heading-link" href="#1-filters">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>A <strong>FILTER</strong> helps in selecting the instrunments to trade, for instance, an analyst may decide to use a screener to filter stocks based on certain fundamental or technical metrics. This simply helps in narrowing down the investable universe.
+An example of the filtering is: only selecting top 10 stocks by Market Cap, selecting stocks from a certain sector only etc.</p>
+<h4 id="2-indicators">
+  2. Indicators
+  <a class="heading-link" href="#2-indicators">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>These are quantitative values derived from market data, or any other alternative data. Example of indicators include: Moving average, Volatility, Bands, Pricing models etc.
+An indicator on its own is not a strategy, it simply is a function of data.
+In backtesting, indicators are usually calculated in advance using market data, but in deployment, they are computed in a streaming fashion.</p>
+<h4 id="3-signals">
+  3. Signals
+  <a class="heading-link" href="#3-signals">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>The <strong>SIGNALS</strong> describe the interaction between filters, market data and indicators. They describe the <em>desire for an action</em> but the strategy may choose not to act on the signals.
+Signals include classic things like:</p>
+<ul>
+<li><strong>Thresholds</strong>: A LONG/SHORT/EXIT signal may be initiated when the price/spread (say) is above 0.3, or any fixed value</li>
+<li><strong>Crossovers</strong>: A LONG/SHORT/EXIT signal may be specified, when the price(indicator) crosses above(below) a given indicator(price)</li>
+<li><strong>Comparison</strong>: A LONG/SHORT/EXIT signal may be issued when the price(indicator) is always above a given threshold/indicator(price).
+Signals may often interact with other signals, especially when a strategy is based on multiple indicators, and thus a strategy can decide to actually OPEN/CLOSE positions when e.g.</li>
+<li>Either one of the signals is ON (OR)</li>
+<li>If both signals are ON (AND)</li>
+</ul>
+<p>Like indicators, during backtests, signals are calculated in advance on market data, but in deployment, they are calculated in a streaming fashion.
+In most strategies, signals and actions are actually the same, however a seperation of the two is important in certain other strategies. The seperation serves to make clear what analysis can be done to support the decision, and what needs to be postponed until a path dependent decision is warranted.</p>
+<h4 id="4-rules">
+  4. Rules
+  <a class="heading-link" href="#4-rules">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Rules are simply objects which take input from market data, indicators and signal and actually take <strong>action</strong>.
+Rules include:</p>
+<ul>
+<li>Entry: Opening LONG/SHORT positions</li>
+<li>Exit: Exiting from LONG/SHORT positions</li>
+<li>Risk: Setting Stop-losses and Take-profits</li>
+<li>Rebalancing: Either time-based or event-based rebalancing.</li>
+</ul>
+<h4 id="strategy-specification-document">
+  Strategy specification document
+  <a class="heading-link" href="#strategy-specification-document">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Before writing the code for the strategy, the strategy needs to be documented clearly in a <em>strategy specification document</em>, where the strategy is completely specified, and all components relating to the strategy are laid out. The strategy specification doc needs to describe details such as initial parameter choices, as well as data requirements.</p>
+<p>This document needs to be written in such a manner as to easily translate it into working code. The aim of writing this strategy specification document before coding is to provide a curb against over fitting. Changes to be made to the strategy specification document need to be documented, in a deliberate manner while indicating that something was incomplete in the initial specification.</p>
+<h3 id="evaluating-the-strategy">
+  Evaluating the strategy
+  <a class="heading-link" href="#evaluating-the-strategy">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>In this stage we want to evaluate the backtest against our hypothesis and business objectives.
+Common errors in backtesting include:</p>
+<ol>
+<li>Look ahead bias: this introduced when an analysis uses knoweldge of future events. To correct for this, most indicators should be fed with lagged values. Look ahed bias is simply using data which you couldnt possibly have.</li>
+<li>Data mining: This is simply testing multiple confgigurations and parameters without carefully controlling for the introduction of bias, simply caused by brute force search over the parameter space without a driving hypothesis for why those parameters would be a good candidate. To counter this walk forward analysis is a good candidate.</li>
+<li>Data snooping: This is the process by which knoweldge of the dataset before hand contaminates the backtest, because you have already looked at the data. This can be confused with market data, and an analyst should be careful not to make changes to the strategy to overcome specific deficiencies he/she sees in the test data.</li>
+</ol>
+<p>Evaluation of the strategy should be done per component as opposed to the whole strategy at once. Methods for cross-validation and testing for the effective number of parameters in machine learning literature are valid methods and can be applied to every component of strategy design, rather than on the whole strategy, as found in [[FEATURE ENGINEERING HAND BOOK]]. The different components of the strategy include the filters, indicators, signals, and the rules.
+Testing the components individually ensures that every component is working well in validating our hypothesis, before moving onto other components.</p>
+<h4 id="benefits-for-testing-individually">
+  Benefits for Testing individually
+  <a class="heading-link" href="#benefits-for-testing-individually">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ol>
+<li>Testing individually guards against <strong>over-fitting</strong>, and especially the risk of data-snooping, rejecting an indicator, signal or any strategy component as quickly in the process guards aagainst trying to over fit the models on data.</li>
+<li>Allows construction of tests which are <strong>specific</strong> to the technique.</li>
+<li>Saves time. Since analysis, and strategy formulation and creation is a time consuming process, testing individually saves time, since by testing individual parts independently allows us reject badly-formed specifications earlier in our analysis.</li>
+</ol>
+<h4 id="evaluating-indicators">
+  Evaluating Indicators
+  <a class="heading-link" href="#evaluating-indicators">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>An indicator could be evaluated in the ML-fashion approach, where we costruct training datasets, validation and test datasets.
+We then proceed to label data in the training dataset, where we aim to capture a specific feature of the price movements e.g.
+For a turning point indicator, we could label the training data, where all turning points occured, on the price series or the smoothed price series, using features learnt from the training data such as volatility etc.
+We could then train a model to learn turning points on the traininig set, and then tune it over the validation set, and finally deploy it on the testing set to measure performance.</p>
+<p>The danger of this approach is <strong>over-fitting</strong>, and this is best guarded by the analyst being keen on whatever he/she is doing.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+	<a href="https://gohugo.io/">Hugo</a> | <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="https://stanleyrazor.github.io/portfolio-blog/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  Machine Learning in Finance - EP. Chan · home
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Stanley Sayianka">
+<meta name="description" content="Machine Learning in Finance - EP. Chan">
+<meta name="keywords" content="blog,data-scientist,machine-learning">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Machine Learning in Finance - EP. Chan"/>
+<meta name="twitter:description" content="Machine Learning in Finance - EP. Chan"/>
+
+<meta property="og:title" content="Machine Learning in Finance - EP. Chan" />
+<meta property="og:description" content="Machine Learning in Finance - EP. Chan" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stanleyrazor.github.io/portfolio-blog/posts/ml-in-finance/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-10-28T00:00:00+00:00" />
+
+
+
+
+
+<link rel="canonical" href="https://stanleyrazor.github.io/portfolio-blog/posts/ml-in-finance/">
+
+
+<link rel="preload" href="https://stanleyrazor.github.io/portfolio-blog/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="https://stanleyrazor.github.io/portfolio-blog/css/coder.min.c4d7e93a158eda5a65b3df343745d2092a0a1e2170feeec909b8a89443903c6a.css" integrity="sha256-xNfpOhWO2lpls980N0XSCSoKHiFw/u7JCbiolEOQPGo=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="https://stanleyrazor.github.io/portfolio-blog/css/coder-dark.min.78b5fe3864945faf5207fb8fe3ab2320d49c3365def0e88ac1df0ddadc54a03c.css" integrity="sha256-eLX&#43;OGSUX69SB/uP46sjINScM2Xe8OiKwd8N2txUoDw=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="https://stanleyrazor.github.io/portfolio-blog/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://stanleyrazor.github.io/portfolio-blog/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://stanleyrazor.github.io/portfolio-blog/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://stanleyrazor.github.io/portfolio-blog/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://stanleyrazor.github.io/portfolio-blog/site.webmanifest">
+<link rel="mask-icon" href="https://stanleyrazor.github.io/portfolio-blog/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.106.0">
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://stanleyrazor.github.io/portfolio-blog/">
+      home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/posts/">My Notes</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://stanleyrazor.github.io/portfolio-blog/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://stanleyrazor.github.io/portfolio-blog/posts/ml-in-finance/">
+              Machine Learning in Finance - EP. Chan
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-10-28T00:00:00Z">
+                October 28, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://stanleyrazor.github.io/portfolio-blog/tags/machine-learning/">Machine Learning</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://stanleyrazor.github.io/portfolio-blog/tags/quant-finance/">Quant Finance</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://stanleyrazor.github.io/portfolio-blog/tags/trading/">Trading</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h1 id="ernest-p-chan-on-financial-machine-learning">
+  Ernest P. Chan on Financial Machine Learning
+  <a class="heading-link" href="#ernest-p-chan-on-financial-machine-learning">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li>
+<p>It is quite hard to apply ML in Finance, in order to get some value.</p>
+</li>
+<li>
+<p>Simple linear models, and strategies (simplicity is in linear, parsimonious models), such as pairs trading using OLS to compute hedge ratios, and use bollinger bands to detect reversion to mean.
+Since more and more people, get in the game, there is [[Strategy decay]], making the strategies become less and less profitable.</p>
+</li>
+<li>
+<p>Reason why ML wasnt applied earlier in finance is the issue of: <strong>Over-fitting</strong></p>
+</li>
+<li>
+<p>In ML, the issue of over-fitting and low interpretability.
+Finance datasets do not have a lot of data points to support more complex models, with many parameters.
+We need strategies to prevent over-fitting in ML, such as how dropout works in deep learning.</p>
+</li>
+<li>
+<p>In constructing models, we need models, which aren&rsquo;t black boxes. This brings in the question of: <strong>Interpretable ML</strong>.
+Interpretable ML calls for <strong>Feature engineering and engineering.</strong> What are the important features/inputs which make the model behave so.
+Most ML models, are data intensive, needing many features.</p>
+</li>
+<li>
+<p>ML should be used mainly for [[risk management]], and [[capital allocation]], but not for signal generation (from my experience).
+For signal generation, we mostly want to predict the direction and magnitude of prediction of the markets. The issue is that many quant traders, and individuals have the same prediction models, and this competition implies that if there is some decent accuracy in anyone&rsquo;s classification models, that would be arbitraged away. Financial markets evolve.
+You need to have extra <strong>edge</strong>, and create new features, which majority of people/traders might not have.</p>
+</li>
+</ul>
+<h2 id="traditional-quant-strats-vs-ml-strats">
+  Traditional quant strats vs ML strats
+  <a class="heading-link" href="#traditional-quant-strats-vs-ml-strats">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li>In traditional quant strats, there are very few variables, and hence few model parameters, in ML, there could be numerous variables.</li>
+<li>In traditional strats, you use models, to do modelling on prices, and variables related to price, such as technicals, and fundamentals, while in ML strats, you&rsquo;ll use them to model mostly [[alternative data]]. ML succeeds in non-linear data modelling. In non-linearity, not all the features will be used.</li>
+<li>INterpretability in traditional strats is a major feature, however, <em>because it is easy to understand, it is easy to replicate.</em>, which leads to [[Strategy decay]]. But in ML models, since they are difficult to understand, and replicate, then decay isnt as real.</li>
+<li>Majority ML models, give outputs probabilistically, which is helpful in capital allocation, e.g. a BUY with 89% probability, makes a trader allocate more capital.</li>
+<li>In ML models, it is easier to do statistical inference, do feature importance, and do model validation using statistical and ML techniques.</li>
+<li>Most traditional models are deterministic, while most ML models, are stochastic, and intrinsically random. Most models,require you to set seed for random reproducibility, however this is a good feature in building robust models, and test for accuracies, sensitivities, etc.</li>
+</ol>
+<h2 id="process-of-strat-building-using-ml">
+  Process of strat building using ML
+  <a class="heading-link" href="#process-of-strat-building-using-ml">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li>Financial data science: Mostly takes 80% of time. Here you tackle numerous problems with financial data, such as:</li>
+</ol>
+<ul>
+<li>Data availability</li>
+<li>Look-ahead bias (<em>especially receiving already compiled data which was revised and edited at later dates, e.g. downloading earnings report for Dec-2020, which was corrected in March-2021, or news sentiment data which is usually overly-engineered to make it look good</em>). This inflates backtest results, since you&rsquo;re using data which you couldn&rsquo;t possibly have. You need <strong>point-in-time</strong> data, which is not cheap.</li>
+<li>Data snooping</li>
+<li>Engineering data into useful features, which feed into the model.</li>
+<li>You have to make the features you are using in your model stationary, especially in financial data science side, such as price series, using: Fractional differentiation, differentiation.</li>
+</ul>
+<ol start="2">
+<li>
+<p>Problem of models to use.</p>
+</li>
+<li>
+<p>Trading strategy construction: After you receive the signals, or the output from the models, such as a direction prediction, or a magnitude prediction. You need to put the prediction into a coherent strategy.</p>
+</li>
+</ol>
+<ul>
+<li>Random forests is the best, since it has just the right complexity, and best captures non-linearity well. They are better than deep learning models (too complicated and data intensive), and better than linear regression models (high bias)</li>
+<li>In ML prediction, do not predict the markets, rather, try predict whether your own strategy is going to make profit or anything else regarding your strategy. This technique is called [[meta-labelling]].</li>
+</ul>
+<p>The three don&rsquo;t&rsquo;s of financial Machine Learning:</p>
+<ul>
+<li>Deep Learning isn&rsquo;t the solution to anything.</li>
+<li>Don&rsquo;t try stock price prediction.</li>
+<li></li>
+</ul>
+<p>-&gt; In ML, we would want heteroskedasticity, i.e. error bars vary with the independent variables are desirable.
+-&gt; Reinforcement learning: might work in shorter time scales, as people respond to order book changes.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+	<a href="https://gohugo.io/">Hugo</a> | <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="https://stanleyrazor.github.io/portfolio-blog/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

@@ -1,99 +1,108 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on HOME</title>
+    <title>Tags on home</title>
     <link>https://stanleyrazor.github.io/portfolio-blog/tags/</link>
-    <description>Recent content in Tags on HOME</description>
+    <description>Recent content in Tags on home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>css</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/tags/css/</link>
-      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      <title>Machine Learning</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/tags/machine-learning/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/css/</guid>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>html</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/tags/html/</link>
-      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      <title>Quant Finance</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/tags/quant-finance/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/html/</guid>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/quant-finance/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>markdown</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/tags/markdown/</link>
-      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      <title>Trading</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/tags/trading/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/markdown/</guid>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/trading/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>privacy</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/tags/privacy/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Quora</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/tags/quora/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/privacy/</guid>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/quora/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>shortcodes</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/tags/shortcodes/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Feature engineering</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/tags/feature-engineering/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/shortcodes/</guid>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/feature-engineering/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>text</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/tags/text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Competencies</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/tags/competencies/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/text/</guid>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/competencies/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>emoji</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/tags/emoji/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Conferences</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/tags/conferences/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/emoji/</guid>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/conferences/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>development</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/tags/development/</link>
-      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Education</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/tags/education/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/development/</guid>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/education/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>hugo</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/tags/hugo/</link>
-      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Profession</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/tags/profession/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/hugo/</guid>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/profession/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>themes</title>
-      <link>https://stanleyrazor.github.io/portfolio-blog/tags/themes/</link>
-      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Publications</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/tags/publications/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/themes/</guid>
+      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>References</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/tags/references/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanleyrazor.github.io/portfolio-blog/tags/references/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,17 @@
     <description>Recent content in Posts on home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Language I: Probabilities - Joints, Marginals and Conditionals.</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/language-i/</link>
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/language-i/</guid>
+      <description>Welcome to my first blog post in this series on text processing! In this series, I will explore the fascinating world of natural language processing, from the basics of language and words to more advanced concepts like text modeling and language generation.
+In this first blog post, we will focus on the fundamental building blocks of language - letters - and how we can use them to understand probabilities. We will then move on to text modeling, which involves using statistical methods to analyze and understand natural language, and finally, we will try to build a simple language generator.</description>
+    </item>
+    
     <item>
       <title>Machine Learning in Finance - EP. Chan</title>
       <link>https://stanleyrazor.github.io/portfolio-blog/posts/ml-in-finance/</link>

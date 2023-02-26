@@ -6,7 +6,17 @@
     <description>Recent content on home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Language I: Probabilities - Joints, Marginals and Conditionals.</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/language-i/</link>
+      <pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/language-i/</guid>
+      <description>Welcome to my first blog post in this series on text processing! In this series, I will explore the fascinating world of natural language processing, from the basics of language and words to more advanced concepts like text modeling and language generation.
+In this first blog post, we will focus on the fundamental building blocks of language - letters - and how we can use them to understand probabilities. We will then move on to text modeling, which involves using statistical methods to analyze and understand natural language, and finally, we will try to build a simple language generator.</description>
+    </item>
+    
     <item>
       <title>Machine Learning in Finance - EP. Chan</title>
       <link>https://stanleyrazor.github.io/portfolio-blog/posts/ml-in-finance/</link>
@@ -91,7 +101,7 @@ Two or more predictors are said to interact if their combined effect is differen
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://stanleyrazor.github.io/portfolio-blog/about/</guid>
-      <description>My name is Stanley Sayianka, an aspiring machine learning research scientist. I am a data scientist trained in statistical methods, with a focus on quantitative finance (so far). I thoroughly enjoy studying machine learning, and strive to combine it with my daily experiences in order to deliver valuable insights to the issues facing the environment I operate in. In my studies, I love exploring how learning algorithms actually learn, how they respond to changes, and how they evolve to handle the ever-growing complexity of the real world.</description>
+      <description>My name is Stanley Sayianka, an aspiring machine learning research scientist. I am a data scientist trained in statistical methods, with a focus on quantitative finance (so far). I thoroughly enjoy studying machine learning, and strive to combine my studies with daily experiences in order to deliver valuable insights wherever I am. In my studies, I love exploring how learning algorithms actually learn, how they respond to changes, and how they evolve to handle the ever-growing complexity of the real world.</description>
     </item>
     
     <item>
@@ -111,8 +121,8 @@ You can alternatively contact me through the social media channels posted on my 
       
       <guid>https://stanleyrazor.github.io/portfolio-blog/projects/</guid>
       <description>The projects I have done on quantitative finance, Machine learning, and data science/analytics are shown below. I have included labels(tags) which help for quick searching and filtering. Full list of all the projects I have done can be found in my Github repositories page. Feel free to contact me for collaborations, inquiries, recommendations and questions. Thanks.
-LEARNING REPRESENTATIONS IN HIGH-DIMENSIONAL DATA
-This study explores models suitable for high-dimensional data, where several challenges such as multi-collinearity and over-fitting are inherent.</description>
+AN EXPOSURE-TO-CRYPTO STRATEGY
+This is a backtest analysis for a strategy which explores systematic exposure to the crypto asset class subject to minimum acceptanle return and downside risk constraints using the hypothesis drive development approach.</description>
     </item>
     
   </channel>

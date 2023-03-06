@@ -121,8 +121,8 @@ You can alternatively contact me through the social media channels posted on my 
       
       <guid>https://stanleyrazor.github.io/portfolio-blog/projects/</guid>
       <description>The projects I have done on quantitative finance, Machine learning, and data science/analytics are shown below. I have included labels(tags) which help for quick searching and filtering. Full list of all the projects I have done can be found in my Github repositories page. Feel free to contact me for collaborations, inquiries, recommendations and questions. Thanks.
-AN EXPOSURE-TO-CRYPTO STRATEGY
-This is a backtest analysis for a strategy which explores systematic exposure to the crypto asset class subject to minimum acceptanle return and downside risk constraints using the hypothesis drive development approach.</description>
+A COMPARISON OF COVARIANCE MATRIX ESTIMATION METHODS FOR TANGENCY PORTFOLIOS
+This research article investigates the problem of covariance matrix estimation for tangency portfolios using data from the NSE.</description>
     </item>
     
   </channel>

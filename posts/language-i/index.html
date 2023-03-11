@@ -151,7 +151,7 @@
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              5-minute read
+              6-minute read
             </span>
           </div>
           
@@ -168,10 +168,6 @@
       <span class="separator">•</span>
     <span class="tag">
       <a href="https://stanleyrazor.github.io/portfolio-blog/tags/nlp/">NLP</a>
-    </span>
-      <span class="separator">•</span>
-    <span class="tag">
-      <a href="https://stanleyrazor.github.io/portfolio-blog/tags/probability/">Probability</a>
     </span></div>
 
         </div>
@@ -188,7 +184,8 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>For this exercise, i will use a dataset with Jane Austen&rsquo;s books, in the R package <code>janeaustenr</code>. It contains the full texts for Jane Austen&rsquo;s 6 completed novels, which are: Sense and Sensibility, Pride and  Prejudice, Mansfield Park, Emma, Northanger Abbey, and  Persuasion. More about that is found here: <a href="https://cran.r-project.org/web/packages/janeaustenr/janeaustenr.pdf">janeaustenr</a></p>
+<p>For this exercise, i will use the Webster&rsquo;s Unabridged Dictionary as a dataset, downloaded using the R package <code>gutenbergr</code>. It is a $20^th$ century english dictionary (date: August 22, 2009 ), free to use, copy, and redistribute under the terms of the Project Gutenberg License. Interested users should check <code>EBook #29765</code> in Project Gutenberg website.</p>
+<p>Since the English Dictionary contains all english words, then it qualifies as a good sample dataset to use in trying to learn about the structure of letters in english words. Every word is represented, and contributes to the analysis.</p>
 <h3 id="pre-processing">
   Pre processing
   <a class="heading-link" href="#pre-processing">
@@ -196,13 +193,16 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>The novel chapters, paragraphs and sentences are broken down into words, a technique called unnesting. After that, pre-processing is done.
+<p>The dictionary sentences and paragraphs are broken down into words, a technique called unnesting. After that, pre-processing is done.
 The pre-processing performed for this analysis, includes:</p>
 <ul>
 <li>Omitting punctiation marks.</li>
-<li>Omitting duplicate words</li>
+<li>Omitting numbers.</li>
+<li>Omitting duplicated words.</li>
 </ul>
 <p>It is common practise in text processing to omit stop words <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, however in this analysis, we do not omit them, since the purpose of the analysis is to examine the structure of letters in english text, and thus stop words add to the analysis.</p>
+<p>The pre processing redcues the dataset from 4,722,799 tokens (words) to 202,487 tokens (words).</p>
+<p>We now dive into the worls of probabilities:</p>
 <hr>
 <h2 id="marginal-probabilities">
   Marginal probabilities
@@ -215,11 +215,11 @@ The pre-processing performed for this analysis, includes:</p>
 <p>In this analysis, we calculate the marginal probability of a letter occurring in the text corpus<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> by dividing the number of times that letter appears by the total number of letters in the corpus.</p>
 <p>For example, if we have a text corpus that contains 100 letters and the letter &ldquo;k&rdquo; appears 30 times in the corpus, then the marginal probability of &ldquo;k&rdquo; is 30/100 = 0.3.
 This means that, <em>in this corpus</em>, the probability of any randomly chosen letter being &ldquo;k&rdquo; is 0.3, regardless of what other letters appear in the corpus.
-The graph below shows the marginal probabilities for the english letters in the text corpus comprising of Jane Austen&rsquo;s works:</p>
+The graph below shows the marginal probabilities for the english letters in the text corpus comprising words from the English Dictionary</p>
 <p><img src="https://stanleyrazor.github.io/portfolio-blog/images/language/marginalprobs.png" alt="Marginal Probability" title="Marginal probabilities"></p>
 <p>An interesting observation is:</p>
 <ol>
-<li>The most commonly occuring letter in the worls of Jane Austen is the letter &rsquo;e&rsquo;, followed by the letter &lsquo;i&rsquo;, &rsquo;n&rsquo;, &rsquo;s&rsquo;.</li>
+<li>The most commonly occuring letter in the English Dictionary is the letter &rsquo;e&rsquo;, followed by the letter &lsquo;a&rsquo;, &lsquo;i&rsquo;, &lsquo;r&rsquo;.</li>
 <li>The rarest occuring letter is letter: &lsquo;z&rsquo;, followed by &lsquo;j&rsquo; and &lsquo;q&rsquo;.</li>
 </ol>
 <h2 id="joint-probability">
@@ -236,7 +236,7 @@ The image below illustrates the joint probabilities:</p>
 <p><img src="https://stanleyrazor.github.io/portfolio-blog/images/language/joint-probs.png" alt="Joint Probabilities" title="Joint probabilities"></p>
 <p>Interesting observations include:</p>
 <ol>
-<li>The letter &lsquo;q&rsquo; found in the words in the works of Jane Austen, are only followed by the letter &lsquo;u&rsquo;. An example of  word which comes in mind is: <em>&ldquo;question&rdquo;</em></li>
+<li>The letter &lsquo;q&rsquo; found in the words in the English Dictionary, are only followed by the letter &lsquo;u&rsquo;. An example of a word which comes in mind is: <em>&ldquo;question&rdquo;</em></li>
 </ol>
 <h2 id="conditional-probability">
   Conditional probability
@@ -252,7 +252,7 @@ The image below illustrates the conditional probabilities:</p>
 <p><img src="https://stanleyrazor.github.io/portfolio-blog/images/language/conditional-full.png" alt="Conditional Probabilities" title="Conditional on the next letter"></p>
 <p>Examples of notable ones include:</p>
 <ol>
-<li>Prob(Next = &lsquo;u&rsquo; | Current = &lsquo;q&rsquo;) = 1. This is most likely the word &ldquo;<em><strong>qu</strong>estion</em>&rdquo;</li>
+<li>Prob(Next = &lsquo;u&rsquo; | Current = &lsquo;q&rsquo;) is higher than the rest, probably due to words like &ldquo;<em><strong>qu</strong>estion</em>&rdquo;</li>
 <li>Prob(Current = &rsquo;e&rsquo; | Next = &lsquo;x&rsquo;) is higher than the rest, probably due to words like &ldquo;<em><strong>ex</strong>ample</em>&rdquo;</li>
 </ol>
 <h2 id="word-starters-and-enders">
@@ -262,15 +262,14 @@ The image below illustrates the conditional probabilities:</p>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<p>It is of interest too to examine the distribution of letters which are commonly found in the starting and ending of english words, particularly those in the text corpus of Jane Austen&rsquo;s works.</p>
+<p>It is of interest to examine the distribution of letters which are commonly found in the starting and ending of english words.</p>
 <p>To obtain the probability that a particular letter is a word &ldquo;<em>starter</em>&rdquo;, we take the number of occurences the letter was used as a starter, divided by the number of occurences of all other english letters being word starters.</p>
 <p>For instance, if the letter &lsquo;a&rsquo; was used as a word starter 60 out of 1000 times, then, the probability of the letter &lsquo;a&rsquo; being a word starter is 60/1000, which is 0.06. This means that in the given text corpus, there is a 6% chance of the letter &lsquo;a&rsquo; appearing at the beginning of a word. This logic similarly applies to word &ldquo;<em>enders</em>&rdquo;.</p>
 <p>The charts below show the probabilities for word &ldquo;<em>starters</em>&rdquo;, and &ldquo;<em>enders</em>&rdquo;:</p>
 <p><img src="https://stanleyrazor.github.io/portfolio-blog/images/language/start-end.png" alt="Starters-Enders" title="Distribution of word starters and enders"></p>
 <p>Interesting findings include:</p>
 <ol>
-<li>The letter &rsquo;s&rsquo; is the most common letter used in the beginning and ending of the english words found in the works of Jane Austen.</li>
-<li></li>
+<li>The letter &rsquo;s&rsquo; is the most common letter used in the beginning and ending of the english words found in English Dictionary</li>
 </ol>
 <div class="footnotes" role="doc-endnotes">
 <hr>

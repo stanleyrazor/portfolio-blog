@@ -6,7 +6,17 @@
     <description>Recent content in Text Processing on home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/tags/text-processing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://stanleyrazor.github.io/portfolio-blog/tags/text-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Language II: Word length distributions, Markov processes, and Text generation</title>
+      <link>https://stanleyrazor.github.io/portfolio-blog/posts/language-ii/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://stanleyrazor.github.io/portfolio-blog/posts/language-ii/</guid>
+      <description>Hello, this is the second post in the #Language series. The first post was about understanding probabilities such as joints, marginals and conditional probabilities using english letters. We were able to answer questions such as:
+What is the most common occuring english letter in all english words ? What is the most likely next letter given that the current letter i&amp;rsquo;m observing is say &amp;rsquo;e&amp;rsquo; ? What was the most likely previous letter given that the current letter i&amp;rsquo;m observing is say &amp;lsquo;j&amp;rsquo; ?</description>
+    </item>
+    
     <item>
       <title>Language I: Probabilities - Joints, Marginals and Conditionals.</title>
       <link>https://stanleyrazor.github.io/portfolio-blog/posts/language-i/</link>
